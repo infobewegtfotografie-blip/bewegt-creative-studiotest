@@ -1,0 +1,3 @@
+BEWEGT CREATIVE STUDIO v1.0.0 PRODUCTION
+Release date: 2026-06-25
+Status: Release Candidate ready for GitHub deployment

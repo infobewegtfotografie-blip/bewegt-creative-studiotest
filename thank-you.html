@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank you — BEWEGT CREATIVE STUDIO</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLSN7VEWBQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RLSN7VEWBQ');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xcqct6l89z");
+  </script>
+
+</head>
+<body class="thank-you-page">
+  <main class="thank-you-card">
+    <p class="eyebrow">BEWEGT CREATIVE STUDIO</p>
+    <h1 data-i18n="form.thanks.title">Thank you.</h1>
+    <p data-i18n="form.thanks.copy">Your project request has been sent. We will get back to you soon.</p>
+    <a class="btn btn-light" href="index.html" data-i18n="form.thanks.back">Back to the studio</a>
+  </main>
+  
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', 'whatsapp_click', {
+            event_category: 'contact',
+            event_label: link.href
+          });
+        }
+      });
+    });
+
+    document.querySelectorAll('a[href^="mailto:"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', 'email_click', {
+            event_category: 'contact',
+            event_label: link.href
+          });
+        }
+      });
+    });
+
+    var form = document.getElementById('projectInquiryForm');
+    if (form) {
+      form.addEventListener('submit', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', 'project_inquiry_submit', {
+            event_category: 'lead',
+            event_label: 'Netlify contact form'
+          });
+        }
+      });
+    }
+  });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
